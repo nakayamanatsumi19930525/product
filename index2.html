@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./slick/slick.css">
+<link rel="stylesheet" href="./slick/slick-theme.css">
+
+<script src="./js/jquery-3.5.1.min.js"></script>
+<script src="./js/pf.js"></script>
+
+<script src="./slick/slick.min.js"></script>
+
+<script type="text/javascript">
+  $(function () {
+    var pagetop = $('#page_top');
+    pagetop.hide();
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 1300) {  //100pxスクロールしたら表示
+        pagetop.fadeIn();
+      } else {
+        pagetop.fadeOut();
+      }
+    });
+    pagetop.click(function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 500); //0.5秒かけてトップへ移動
+      return false;
+    });
+  });
+
+  $(function(){
+   $('.multiple-items').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1
+    });
+  });
+
+</script>
+
+</head>
+
+<!--header --------------------------------------------------------- -->
+<body>
+  <div id="firstview">
+      <header id="top-header">
+        <div class="flex">
+          <h1 class="header-logo"><img src="./img/TECH WOMAN.png" alt="TECH WOMAN"></h1>
+
+        <nav class="header-nav">
+          <ul class="gnav">
+            <li><a href="#">ABOUT<br> <span>TECH WOMANとは？</span> </a></li>
+            <li><a href="#">COURSE<br><span>コース紹介</span> </a></li>
+            <li><a href="#">SUPPORT<br><span>サポート</span></a></li>
+            <li><a href="#">VOICE<br><span>受講生の声</span></a></li>
+            <li><a href="#">FAQ<br><span>よくある質問</span></a></li>
+          </ul>
+        </nav>
+        <div class="btn-header">
+          <div class="btn header1">
+            <a href="#">無料体験はこちら！</a>
+          </div>
+          <div class="btn login">
+            <a href="#">ログイン</a>
+          </div>
+        </div>
+
+        </div>
+      </header>
+        <p class="catchcopy">女性のための<br>エンジニアスクール・コミュニティ</p>
+  </div>
+
+  <!-- hamburger------------------- -->
+  <div id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+<!--section1 -------------------------------------------------------- -->
+  <section class="about">
+    <div class="container">
+      <h2 class="about-title">ABOUT</h2>
+      <p class="about-des">説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。
+      説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。
+      説明が入ります。説明が入ります。説明が入ります。説明が入ります。</p>
+
+      <div class="flex">
+        <div class="flexBox item1">
+          <div class="circle">特徴<br>１</div>
+          <img class="img12" src="./img/Group 15.png">
+          <p class="flex-des">ああああああああああああああああああああああああああああああああああああああ</p>
+        </div> 　　
+      <div class="flexBox item2">
+          <div class="circle">2</div>
+          <div class="circle">特徴<br>１</div>
+          <img class="img12" src="./img/Group 15.png">
+          <p class="flex-des">ああああああああああああああああああああああああああああああああああああああ</p>
+          </div> 　　
+      <div class="flexBox item3">
+          <div class="circle">3</div>
+          <div class="circle">特徴<br>１</div>
+          <img class="img12" src="./img/Group 15.png">
+          <p class="flex-des">ああああああああああああああああああああああああああああああああああああああ</p>
+          </div> 　　
+      </div>
+
+    </div>
+  </section>
+<!--section2 ------------------------------------------------------------ -->
+<section class="reccomend">
+  <div class="container">
+
+    <div class="flex">
+    <div class="reccomend-left">
+    <h2 class="flex-reccomend-title">こんな人におすすめです！</h2>
+    <div class="box"></div>
+    <img class="flex-img" src="./img/r0272 1.png" alt="">
+    </div>
+
+    <div class="reccomend-right">
+      <div class="reccomend-right-p">
+      <span class="checkmark"></span>
+      <p>説明が入ります。説明が入ります。説明が入ります。</p>
+      </div>
+      <div class="reccomend-right-p">
+        <span class="checkmark"></span>
+        <p>説明が入ります。説明が入ります。説明が入ります。</p>
+      </div>
+      <div class="reccomend-right-p">
+        <span class="checkmark"></span>
+        <p>説明が入ります。説明が入ります。説明が入ります。</p>
+      </div>
+      <div class="reccomend-right-p">
+        <span class="checkmark"></span>
+        <p>説明が入ります。説明が入ります。説明が入ります。</p>
+      </div>
+      <div class="reccomend-right-p">
+        <span class="checkmark"></span>
+        <p>説明が入ります。説明が入ります。説明が入ります。</p>
+      </div>
+      <div class="reccomend-right-p">
+        <span class="checkmark"></span>
+        <p>説明が入ります。説明が入ります。説明が入ります。</p>
+      </div>
+      <div class="reccomend-right-p">
+        <span class="checkmark"></span>
+        <p>説明が入ります。説明が入ります。説明が入ります。</p>
+      </div>
+      <div class="reccomend-right-p">
+        <span class="checkmark"></span>
+        <p>説明が入ります。説明が入ります。説明が入ります。</p>
+      </div>
+
+    </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!--section3 -------------------------------------------------------- -->
+<section class="course">
+  <div class="container">
+    <h2 class="about-title">COURSES</h2>
+    <p class="course-des">説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。</p>
+
+    <p class="course-front">
+      【 フロンドエンド 】
+    </p>
+    <div class="flex course-flex">
+
+      <div class="course-front-item">
+        <img class="front-item-img" src="./img/Group 11.png" alt="">
+        <div class="front-item-bg">
+        <p class="front-item-p">HTML</p>
+        </div>
+      </div>
+
+      <div class="course-front-item">
+        <img class="front-item-img" src="./img/Group 11.png" alt="">
+        <div class="front-item-bg">
+          <p class="front-item-p">CSS</p>
+        </div>
+      </div>
+
+      <div class="course-front-item">
+        <img class="front-item-img" src="./img/Group 11.png" alt="">
+        <div class="front-item-bg">
+          <p class="front-item-p">JavaScript</p>
+        </div>
+      </div>
+
+    </div>
+
+<p class="course-front">
+  【 バックエンド 】
+</p>
+<div class="flex course-flex">
+
+      <div class="course-front-item">
+        <img class="front-item-img" src="./img/Group 16.png" alt="">
+        <div class="front-item-bg2">
+          <p class="front-item-p">Ruby</p>
+        </div>
+      </div>
+      
+      <div class="course-front-item">
+        <img class="front-item-img" src="./img/Group 16.png" alt="">
+        <div class="front-item-bg2">
+          <p class="front-item-p">PHP</p>
+        </div>
+      </div>
+      
+      <div class="course-front-item">
+        <img class="front-item-img" src="./img/Group 16.png" alt="">
+        <div class="front-item-bg2">
+          <p class="front-item-p">Ruby on Rails</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  </section>
+
+
+<!--section4 -------------------------------------------------------- -->
+<section class="contact">
+  <div class="container">
+    <p class="contact-p">サービスについての詳細や、過去の受講生の事例などをご説明させていただきます。
+    <br>まずはお気軽にご参加ください。</p>
+
+    <a href="#" class="btn contact-btn">WEBで簡単！無料体験はこちら</a>
+  </div>
+</section>
+
+<!--section5 -------------------------------------------------------- -->
+<section class="support">
+  <div class="container">
+    <h2 class="about-title">SUPPORT</h2>
+    <p class="about-des">説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。説明が入ります。</p>
+
+    <div class="flex">
+      <div class="flex-support item1">
+        <img class="img13" src="./img/Group 17.png">
+        <h3 class="flex-support-h3">わからないところは<br>全て質問できる</h3>
+        <p class="flex-support-p">ああああああああああああああああああああああああああああああああああああああ</p>
+      </div> 　
+      
+      <div class="flex-support item2">
+        <img class="img13" src="./img/Group 17.png">
+        <h3 class="flex-support-h3">わからないところは<br>全て質問できる</h3>
+        <p class="flex-support-p">ああああああああああああああああああああああああああああああああああああああ</p>
+      </div> 　
+      
+      <div class="flex-support item3">
+        <img class="img13" src="./img/Group 17.png">
+        <h3 class="flex-support-h3">わからないところは<br>全て質問できる</h3>
+        <p class="flex-support-p">ああああああああああああああああああああああああああああああああああああああ</p>
+      </div> 　　
+
+    </div>
+</div>
+</section>
+
+<!--section6 -------------------------------------------------------- -->
+<section class="voice">
+  <div class="container">
+    <h2 class="about-title">VOICES</h2>
+</div>
+
+    <div class="multiple-items">
+
+      <div class="voice-flex">
+        <div class="add">
+        <div class="voice-flex-top">
+        <img class="voice-img" src="./img/Group 19.png" alt="">
+        <p class="voice-p">メーカー営業
+        <br>20代</p>
+        </div>
+        <p class="voice-p-detail">説明が入ります。説明が入ります。説明が入ります。
+        説明が入ります。説明が入ります。説明が入ります。
+        説明が入ります。説明が入ります。説明が入ります。
+        説明が入ります。説明が入ります。説明が入ります。
+
+        </p>
+        </div>
+      </div>
+
+      <div class="voice-flex">
+       <div class="add">
+        <div class="voice-flex-top">
+          <img class="voice-img" src="./img/Group 19.png" alt="">
+          <p class="voice-p">メーカー営業
+            <br>20代
+          </p>
+        </div>
+        <p class="voice-p-detail">説明が入ります。説明が入ります。説明が入ります。
+          説明が入ります。説明が入ります。説明が入ります。
+          説明が入ります。説明が入ります。説明が入ります。
+          説明が入ります。説明が入ります。説明が入ります。
+
+      </p>
+      </div>
+      </div>
+
+      <div class="voice-flex">
+        <div class="add">
+        <div class="voice-flex-top">
+          <img class="voice-img" src="./img/Group 19.png" alt="">
+          <p class="voice-p">メーカー営業
+            <br>20代
+          </p>
+        </div>
+        <p class="voice-p-detail">説明が入ります。説明が入ります。説明が入ります。
+          説明が入ります。説明が入ります。説明が入ります。
+          説明が入ります。説明が入ります。説明が入ります。
+          説明が入ります。説明が入ります。説明が入ります。
+
+      </p>
+      </div>
+      </div>
+
+      <div class="voice-flex">
+        <div class="add">
+        <div class="voice-flex-top">
+          <img class="voice-img" src="./img/Group 19.png" alt="">
+          <p class="voice-p">メーカー営業
+            <br>20代
+          </p>
+        </div>
+        <p class="voice-p-detail">説明が入ります。説明が入ります。説明が入ります。
+          説明が入ります。説明が入ります。説明が入ります。
+          説明が入ります。説明が入ります。説明が入ります。
+          説明が入ります。説明が入ります。説明が入ります。
+      
+        </p>
+        </div>
+      </div>
+
+      <div class="voice-flex">
+        <div class="add">
+        <div class="voice-flex-top">
+          <img class="voice-img" src="./img/Group 19.png" alt="">
+          <p class="voice-p">メーカー営業
+            <br>20代
+          </p>
+        </div>
+        <p class="voice-p-detail">説明が入ります。説明が入ります。説明が入ります。
+          説明が入ります。説明が入ります。説明が入ります。
+          説明が入ります。説明が入ります。説明が入ります。
+          説明が入ります。説明が入ります。説明が入ります。
+      
+        </p>
+        </div>
+      </div>
+
+      <div class="voice-flex">
+        <div class="add">
+        <div class="voice-flex-top">
+          <img class="voice-img" src="./img/Group 19.png" alt="">
+          <p class="voice-p">メーカー営業
+            <br>20代
+          </p>
+        </div>
+        <p class="voice-p-detail">説明が入ります。説明が入ります。説明が入ります。
+          説明が入ります。説明が入ります。説明が入ります。
+          説明が入ります。説明が入ります。説明が入ります。
+          説明が入ります。説明が入ります。説明が入ります。
+      
+        </p>
+        </div>
+      </div>
+
+
+    </div>
+
+
+</section>
+
+<!--section5 -------------------------------------------------------- -->
+<section class="contact">
+  <div class="container">
+    <p class="contact-p">サービスについての詳細や、過去の受講生の事例などをご説明させていただきます。
+      <br>まずはお気軽にご参加ください。
+    </p>
+
+    <a href="#" class="btn contact-btn">WEBで簡単！無料体験はこちら</a>
+  </div>
+</section>
+
+<!--section6 -------------------------------------------------------- -->
+<section class="voice">
+  <div class="container">
+    <h2 class="about-title">FAQ</h2>
+    </div>
+
+    <div id="accordion" class="accordion-container">
+      <h4 class="accordion-title js-accordion-title"><span>Q.</span>体験レッスンはオンラインでも受けられる？</h4>
+      <div class="accordion-content">
+        <p>体験レッスンは何度でもご受講いただけますが、入会キャンペーンの適用は初回のみとなっております。 体験レッスン開講以外のコースについてご興味ある方は、カウンセリングの時間にご相談くださいませ。</p>
+      </div>
+    </div>
+
+    <div id="accordion" class="accordion-container">
+      <h4 class="accordion-title js-accordion-title"><span>Q.</span>体験レッスンはオンラインでも受けられる？</h4>
+      <div class="accordion-content">
+        <p>体験レッスンは何度でもご受講いただけますが、入会キャンペーンの適用は初回のみとなっております。 体験レッスン開講以外のコースについてご興味ある方は、カウンセリングの時間にご相談くださいませ。</p>
+      </div>
+    </div>
+
+    <div id="accordion" class="accordion-container">
+      <h4 class="accordion-title js-accordion-title"><span>Q.</span>体験レッスンはオンラインでも受けられる？</h4>
+      <div class="accordion-content">
+        <p>体験レッスンは何度でもご受講いただけますが、入会キャンペーンの適用は初回のみとなっております。 体験レッスン開講以外のコースについてご興味ある方は、カウンセリングの時間にご相談くださいませ。</p>
+      </div>
+    </div>
+
+    <div id="accordion" class="accordion-container">
+      <h4 class="accordion-title js-accordion-title"><span>Q.</span>体験レッスンはオンラインでも受けられる？</h4>
+      <div class="accordion-content">
+        <p>体験レッスンは何度でもご受講いただけますが、入会キャンペーンの適用は初回のみとなっております。 体験レッスン開講以外のコースについてご興味ある方は、カウンセリングの時間にご相談くださいませ。</p>
+      </div>
+    </div>
+</section>
+<!--section7 -------------------------------------------------------- -->
+<section class="plans">
+  <div class="container">
+    <h2 class="about-title">PLANS</h2>
+
+    <div class="plan-sum">
+
+    <div class="plans-item">
+      <div class="plan-item1">
+      <h3>2ヶ月プラン</h3>
+      </div>
+      <!-- <div class="plan-item2"> -->
+      <p class="plan-p"><span>200,000</span>円</p>
+      <p class="plan-p2">（税込）</p>
+      <!-- </div> -->
+    </div>
+
+    <div class="plans-item">
+      <div class="plan-item1">
+        <h3>3ヶ月プラン</h3>
+      </div>
+      <!-- <div class="plan-item2"> -->
+      <p class="plan-p"><span>300,000</span>円</p>
+      <p class="plan-p2">（税込）</p>
+      <!-- </div> -->
+    </div>
+
+    <div class="plans-item">
+      <div class="plan-item1">
+        <h3>3ヶ月プラン（キャリアサポート付き）</h3>
+      </div>
+      <!-- <div class="plan-item2"> -->
+      <p class="plan-p"><span>350,000</span>円</p>
+      <p class="plan-p2">（税込）</p>
+      <!-- </div> -->
+    </div>
+
+    </div>
+
+</div>
+</section>
+
+<!--section8 -------------------------------------------------------- -->
+<section class="contact bg-pink">
+  <div class="container">
+    <p class="contact-p">サービスについての詳細や、過去の受講生の事例などをご説明させていただきます。
+      <br>まずはお気軽にご参加ください。
+    </p>
+
+    <div class="flex">
+    <a href="#" class="btn contact-btn">WEBで簡単！無料体験はこちら</a>
+   <a href="#" class="btn contact-btn pink-btn">お問い合わせ</a>
+  </div>
+
+  </div>
+</section>
+
+
+<div id="page_top"><a href="#"></a></div>
+
+<!--footer ------------------------------------------------------------------ -->
+<footer>
+  <div class="container">
+
+   <div class="footer-n">
+  <nav class="footer-nav">
+    <ul>
+      <li><a href="#">運営会社 <span>|</span> </a></li>
+      <li><a href="#">利用規約 <span>|</span> </a></li>
+      <li><a href="#">プライバシーポリシー <span>|</span></a></li>
+      <li><a href="#">特定商取引法に基づく表示 <span>|</span></a></li>
+      <li><a href="#">お問い合わせ</a></li>
+    </ul>
+  </nav>
+ </div>
+
+</div>
+  <p class="copyright">Copyright ©︎ techwoman All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+
+
